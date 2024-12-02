@@ -6,13 +6,19 @@ import { AtividadesComponent } from './atividades/atividades.component';
 import { FormularioComponent } from './formulario/formulario.component';
 import { SobreComponent } from './sobre/sobre.component';
 
-const routes: Routes = [
+// src/app/app.routes.ts
+
+// Defina suas rotas normalmente
+const routes = [
   { path: '', component: HomeComponent },
   { path: 'dicas', component: DicasComponent },
   { path: 'atividades', component: AtividadesComponent },
   { path: 'formulario', component: FormularioComponent },
   { path: 'sobre', component: SobreComponent }
 ];
+
+// Exporte a constante `routes` como padrão
+export default routes;
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
